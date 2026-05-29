@@ -37,15 +37,15 @@ tradenew-emotion-skill/
 
 ## 使用方法
 
-### 1. 情绪分析调用
+### 1. 大盘关键点位分析
 
 ```javascript
 // 调用示例
 invoke('tradenew-emotion-skill', {
-  type: 'market',  // market: 市场整体, sector: 板块, stock: 个股
+  type: 'analysis/index',
   params: {
-    market: 'A股',
-    dateRange: '2026-01-01~2026-05-15'
+    start_date: '20250515',
+    end_date: '20250516'
   }
 })
 ```
@@ -83,19 +83,13 @@ invoke('tradenew-emotion-skill', {
   - start_date（string）：起始日期，格式"YYYYMMDD"，如"20250515"
   - end_date（string）：结束日期，格式"YYYYMMDD"，如"20250516"
 
-#### 3. 情绪分析接口
-- **完整路径**: `https://data.qidianiu.com:9443/api/{具体接口}`
-- **功能**: 市场情绪、板块情绪、个股情绪等分析
-
 ## 功能特性
 
-- ✅ 市场整体情绪分析（恐慌/贪婪指数）
-- ✅ 板块情绪热度排行
-- ✅ 个股情绪指标计算
-- ✅ 资金流向情绪分析
-- ✅ 舆情情绪监控（新闻、公告等）
-- ✅ **大盘关键点位与支撑压力区**（起点牛情绪可视）
-- ✅ Agent调用封装
+- ✅ 大盘关键点位分析
+- ✅ 市场整体环境分析
+- ✅ 短线连板情绪分析
+- ✅ 题材运行节奏分析
+- ✅ 资金参与节奏分析
 
 ## 版本历史
 
