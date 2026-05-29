@@ -1,0 +1,12 @@
+{
+  "apiEndpoint": "https://data.qidianiu.com:9443/api",
+  "apikey": "YOUR_API_KEY_HERE",
+  "timeout": 30000,
+  "market": "A股",
+  "emotionIndicators": {
+    "fearGreedIndex": true,
+    "bullBearRatio": true,
+    "turnoverRate": true,
+    "newHighLowCount": true
+  }
+}

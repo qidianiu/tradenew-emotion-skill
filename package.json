@@ -1,0 +1,17 @@
+{
+  "name": "tradenew-emotion-skill",
+  "version": "0.0.1",
+  "description": "A股市场情绪分析skill，用于调用agent处理A股市场情绪分析任务",
+  "author": "huawei-cloud",
+  "main": "SKILL.md",
+  "dependencies": {},
+  "config": {
+    "agentEndpoint": "",
+    "timeout": 30000,
+    "dataSources": {
+      "emotion": "市场盘面情绪数据源",
+      "capital": "资金流向数据源",
+      "concept": "概念题材数据源"
+    }
+  }
+}
